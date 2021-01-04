@@ -1,7 +1,15 @@
-var favorites = {
-    food : "カレー",
-    color : "青",
-    number : 7,
-};
-favorites.sports = "サッカー"; // 要素が追加される
-console.log(favorites.food);
+var color = "黒";
+switch(color) {
+    case "青":
+    case "緑":
+        console.log("進む");
+        break;
+    case "黃":
+        console.log("急いで進む");
+        break;
+    case "赤":
+        console.log("止まる");
+        break;
+    default:
+        console.log("信号機の故障");
+        }
