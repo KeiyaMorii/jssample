@@ -1,10 +1,8 @@
-function showImage(number) {
-    let htmlstr = "<img src='images/frog" + number + ".jpg'>";
-    document.getElementById("imageArea").innerHTML = htmlstr;
+function calcCircle(radius) {
+    return radius * radius * 3.14;
 }
-window.onload = function() {
-    document.getElementById("btn").onclick = function() {
-        showImage(1);
-        this.disabled = true;
-    };
-};
+function callFunc() {
+    let area = calcCircle(5);
+    return area;
+}
+console.log(callFunc());
