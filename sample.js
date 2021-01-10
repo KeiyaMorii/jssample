@@ -1,8 +1,10 @@
-function showIppan() {
-    document.getElementById("ippan_area").className = "active";
-    document.getElementById("hojin_area").className = "passive";
+function showImage(number) {
+    let htmlstr = "<img src='images/frog" + number + ".jpg'>";
+    document.getElementById("imageArea").innerHTML = htmlstr;
 }
-function showHojin() {
-    document.getElementById("ippan_area").className = "passive";
-    document.getElementById("hojin_area").className = "active";
-}
+window.onload = function() {
+    document.getElementById("btn").onclick = function() {
+        showImage(1);
+        this.disabled = true;
+    };
+};
