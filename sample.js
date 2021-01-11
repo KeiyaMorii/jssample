@@ -1,5 +1,9 @@
-let today = new Date();
-console.log("今日は" + 
-    today.getFullYear() + "年" +
-    (today.getMonth() + 1) + "月" +
-    today.getDate() + "日です。");
+let count = 0;
+let timer = setInterval(output, 1000);
+function output() {
+    count++;
+    console.log(count + "秒経過");
+    if(count >= 10) {
+        clearInterval(timer);
+    }
+}
