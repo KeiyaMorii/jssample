@@ -1,6 +1,3 @@
-let str = "AAA";
-console.log(str + 10);
-let num = parseInt(str);
-if(isNaN(num)) {
-    console.log("変換失敗");
-}
+(function (name) {
+    console.log(name + "さん、こんばんは");
+}) ("よしお");
