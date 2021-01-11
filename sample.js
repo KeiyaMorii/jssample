@@ -1,8 +1,6 @@
-function calcCircle(radius) {
-    return radius * radius * 3.14;
+let str = "AAA";
+console.log(str + 10);
+let num = parseInt(str);
+if(isNaN(num)) {
+    console.log("変換失敗");
 }
-function callFunc() {
-    let area = calcCircle(5);
-    return area;
-}
-console.log(callFunc());
