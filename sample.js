@@ -1,10 +1,7 @@
-function showImage(number) {
-    let htmlstr = "<img src='images/frog" + number + ".jpg'>";
-    document.getElementById("imageArea").innerHTML = htmlstr;
-}
-window.onload = function() {
-    document.getElementById("btn").onclick = function() {
-        showImage(1);
-        this.disabled = true;
-    };
-};
+const olympic = new Date("2021-7-23");
+let hoge = new Date();
+let diff = olympic.getTime() - hoge.getTime();
+
+alert("オリンピックまでの日数は" + Math.floor(diff / 1000 / 60 / 60 / 24) + "日後です");
+
+console.log(new Date());
