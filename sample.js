@@ -1,3 +1,3 @@
 $(function() {
-    $("p ~ a").css("font-size", "50px");
+    $("input[name='tel']").css("background-color", "red");
 });
