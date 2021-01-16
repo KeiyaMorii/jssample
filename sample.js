@@ -1,6 +1,4 @@
 $(function() {
-    $("#fruits > li")
-    .css("background-color", "blue")
-    .filter(":even")
-    .css("color", "white");
+    console.log($("div").filter(".item").html());
+    console.log($("div").find(".item").html());
 });
