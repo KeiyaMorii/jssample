@@ -8,6 +8,20 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-   <p id="msg" class="large">こんにちは</p>
+   <input type="radio" name="target" value="i" checked>一般用
+   <input type="radio" name="target" value="h">法人用
+   <ul id="ippan_area" class="active">
+       <li>氏名<input type="text" name="name"></li>
+       <li>住所<input type="text" name="address"></li>
+       <li>電話番号<input type="text" name="tel"></li>
+   </ul>
+   <ul id="hojin_area" class="passive">
+    <li>会社名<input type="text" name="company"></li>
+    <li>部署名<input type="text" name="busho"></li>
+    <li>担当者名<input type="text" name="tanto"></li>
+    <li>住所<input type="text" name="address"></li>
+    <li>電話番号<input type="text" name="tel"></li>
+    <li>内線電話<input type="text" name="naisen"></li>
+   </ul>
 </body>
 </html>
