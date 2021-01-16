@@ -1,3 +1,3 @@
 $(function() {
-    $("#msg1").html($("#msg2").html());
+    $("#msg1").val($("#msg2").val());
 });
