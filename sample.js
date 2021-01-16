@@ -1,5 +1,5 @@
 $(function() {
-    $("#fruits")
-    .append("<li>パイナップル</li>")
-    .prepend("<li>パパイヤ</li>");
+    $("p")
+    .after("<p>おやすみ</p>")
+    .before("<p>おはよう</p>");
 });
