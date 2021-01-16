@@ -1,3 +1,6 @@
 $(function() {
-    $("input[name='tel']").css("background-color", "red");
+    $("#fruits > li")
+    .css("background-color", "blue")
+    .filter(":even")
+    .css("color", "white");
 });
