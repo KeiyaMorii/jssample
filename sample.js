@@ -1,8 +1,3 @@
 $(function() {
-    $("#btn").on("click", sayHello);
+    $("#msg").removeClass("large");
 });
-function sayHello() {
-    alert("こんにちは");
-    $("#btn").off("click", sayHello);
-    $(this).attr("disabled", "disabled");
-}

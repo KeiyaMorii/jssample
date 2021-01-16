@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-.active {
-    display: block;
-}
-.passive {
-    display: none;
+.large {
+    font-size: 30px;
 }
