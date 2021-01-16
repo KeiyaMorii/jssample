@@ -1,3 +1,3 @@
 $(function() {
-    $("#msg1").val($("#msg2").val());
+    $("img").attr("src", "images-j/frog1.jpg");
 });
