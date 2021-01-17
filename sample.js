@@ -1,20 +1,13 @@
 $(function() {
-    setSubCategory();
-    $("#main").on("change", setSubCategory);
-});
-function setSubCategory() {
-    let subList = [
-        [ "ノート", "タワー型", "一体型" ],
-        [ "マウス", "キーボード", "モニタ", "スピーカー"]
-    ];
-
-    let i = $("#main > option:selected").val();
-
-    let sub = $("#sub");
-    sub.empty();
-
-    for(let j=0; j < subList[i].length; j++) {
-        sub.append("<option value='" + j + "'>" + 
-        subList[i][j] + "</option>");
+    $.getJSON("item.json",
+    function(data) {
+        for(let i=0; i<data.length; i++) {
+            $("#dataTable").append("<tr></tr>")
+            .find("tr:last")
+            .append("<td>" + data[i].code + "</td>")
+            .append("<td>" + data[i].name + "</td>")
+            .append("<td>" + data[i].price + "</td>");
+        }
     }
-}
+    );
+});
