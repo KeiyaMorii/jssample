@@ -1,11 +1,24 @@
 $(function() {
-    $("#large").on("click", function() {
-        $("#photo").animate({
-            "width" : "90%",
-            "height" : "90%"
-        }, 3000, "swing").animate({
-            "width" : "20%",
-            "height" : "20%"
-        }, 300, "swing");
+    let imageArea = $("#imageArea");
+    for(let i=1; i<=5; i++) {
+        imageArea.append(
+            "<img src='images-j/flower" + i + ".jpg'>"
+        );
+    }
+
+    $("#next").on("click", function() {
+        if(parseInt(imageArea.css("left")) > -800) {
+            imageArea.animate({
+                "left" : "-=200px" 
+            }, "fast", "linear");
+        }
+    });
+
+    $("#prev").on("click", function() {
+        if(parseInt(imageArea.css("left")) < 0) {
+            imageArea.animate({
+                "left" : "+=200px" 
+            }, "fast", "linear");
+        }
     });
 });
