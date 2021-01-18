@@ -1,3 +1,5 @@
 $(function() {
-    $("#index2Area").load("index2.html");
+    $("#switch").on("click", function() {
+        $("#block").toggle("slow");
+    });
 });

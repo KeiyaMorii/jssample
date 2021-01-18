@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
-.active {
-    display: block;
-}
-.passive {
-    display: none;
+#block{
+    background-color: pink;
+    width: 200px;
+    height: 100px;
 }
