@@ -1,8 +1,8 @@
 $(function() {
     $("#open").on("click", function() {
-        $("#block").slideDown("normal");
+        $("img").fadeIn("slow");
     });
     $("#close").on("click", function() {
-        $("#block").slideUp("normal");
+        $("img").fadeOut("slow");
     });
 });
