@@ -8,17 +8,26 @@ $(function() {
 
     $("#next").on("click", function() {
         if(parseInt(imageArea.css("left")) > -800) {
+            toDisabled();
             imageArea.animate({
                 "left" : "-=200px" 
-            }, "fast", "linear");
+            }, "fast", "linear", toEnabled);
         }
     });
 
     $("#prev").on("click", function() {
         if(parseInt(imageArea.css("left")) < 0) {
+            toDisabled();
             imageArea.animate({
                 "left" : "+=200px" 
-            }, "fast", "linear");
+            }, "fast", "linear", toEnabled);
         }
     });
 });
+
+function toDisabled() {
+    $("#prev, #next").attr("disabled", "disabled");
+}
+function toEnabled() {
+    $("#prev, #next").removeAttr("disabled");
+}
