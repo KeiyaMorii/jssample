@@ -1,5 +1,8 @@
 $(function() {
-    $("#switch").on("click", function() {
-        $("#block").toggle("slow");
+    $("#open").on("click", function() {
+        $("#block").slideDown("normal");
+    });
+    $("#close").on("click", function() {
+        $("#block").slideUp("normal");
     });
 });
