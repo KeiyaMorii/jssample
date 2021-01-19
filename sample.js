@@ -1,8 +1,9 @@
 $(function() {
-    $("img").animate(
-        {"width" : "400px"},1000,"linear",toPassive
-    );
+    $("#btn").on("click", function() {
+        $(this).prop("disabled", true);
+    });
+
+    $("#btn2").on("click", function() {
+        $("#btn").prop("disabled", false);
+    });
 });
-function toPassive(){
-    $("img").hide();
-}
